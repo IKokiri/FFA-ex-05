@@ -1,0 +1,8 @@
+<!-- <input [(ngModel)]="term" (ngModelChange)="onChange()" type="text" /> -->
+<search-component (respostaFamilia)="onChange($event)"></search-component>
+<div>
+  <li *ngFor="let movie of moviesTela">
+    <img-component></img-component>
+    {{movie.name}}
+  </li>
+</div>
